@@ -1,6 +1,6 @@
-# Turborepo Svelte starter
+# Turborepo Svelte & Fastify w/trpc & prisma starter
 
-This is an official starter Turborepo.
+This is an custom made Turborepo starter.
 
 ## What's inside?
 
@@ -8,28 +8,35 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [svelte-kit](https://kit.svelte.dev/) app
-- `web`: another [svelte-kit](https://kit.svelte.dev/) app
-- `ui`: a stub Svelte component library shared by both `web` and `docs` applications
+- `mobile`: a [svelte-kit] app
+- `api`: a [fastify] app with [trpc] and [prisma]
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-plugin-svelte` and `eslint-config-prettier`)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package/app is 100% [TypeScript].
 
 ### Utilities
 
 This Turborepo has some additional tools already setup for you:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [TypeScript] for static type checking
+- [ESLint] for code linting
+- [Prettier] for code formatting
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx degit vercel/turbo/examples/with-svelte with-svelte
-cd with-svelte
-pnpm install
+npx degit HanielU/turbo-sk-fastify-trpc-prisma turbo-fastify
+cd turbo-fastify
+yarn
 git init . && git add . && git commit -m "Init"
 ```
+<!-- initialise all the links used -->
+[trpc]: https://trpc.io
+[fastify]: https://www.fastify.io
+[prisma]: https://www.prisma.io
+[svelte-kit]: https://kit.svelte.dev
+[typescript]: https://www.typescriptlang.org
+[eslint]: https://eslint.org
+[prettier]: https://prettier.io
